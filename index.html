@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset=utf-8>
+	<title>WebVTT Example</title>
+	<meta name="keywords" content="webvtt,webvtt example,playr,html5" />
+	<meta name="description" content="WebVTT Example" />
+	<link rel="stylesheet" href="css/player.css" />
+	<style>
+		body {
+      font-family:Verdana,Arial;}
+		a { text-decoration:none; color:#666; }
+		h1 { font-size:20px; padding:0; }
+		header p { font-size:12px; }
+		.playr_controls { margin-top:-11px; }
+		video { width:360px; height:260px; }
+		small { color:#aaa; font-size:11px; display:block; }
+		.highlight { color:#4169e1; font-weight:bold; text-transform:uppercase; background-color:#fff; padding:0 2px; }
+		footer { font-size:11px; color:#aaa; }
+	</style>
+	<script src="js/player.min.js"></script>
+</head>
+<body align="center">
+	<header>
+		<h1>WebVTT Example</h1>
+		<p>(from <a href="http://www.iandevlin.com/blog/2011/05/html5/webvtt-and-video-subtitle">WebVTT and Video Subtitles - iandevlin.com</a>)</p>
+	</header>
+	<p>This video uses the following <a href="src/vtt/sub.vtt">WebVTT file</a>.</p>
+	<video id="vTest" class="playr_video" controls preload="metadata">
+		<source src='src/video/upc-tobymanley.theora.ogg' type='video/ogg'>
+		<source src='src/video/upc-tobymanley.mp4' type='video/mp4'>
+		<track label="English subtitles" kind="subtitles" srclang="en" src="src/vtt/sub.vtt" default>
+	</video>
+	<footer>
+	</footer>
+</body>
+</html>
